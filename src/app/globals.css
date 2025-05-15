@@ -1,42 +1,113 @@
+
+/* :root {
+  --primary-color: #967d69;
+  --highlight-color: #D6AB4C;
+  --secondary-color: #2C363F;
+  --backdrop-primary: #010101;
+  --backdrop-secondary: #2C363F; 
+  --backdrop-secondary:rgb(26, 27, 27);
+  --backdrop-alternate:rgb(177, 188, 194);
+} */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #0D2B1D;
+  --highlight-color:rgb(1, 59, 16);
+  --secondary-color: #6B8F71;
+  --backdrop-primary: #AEC3B0;
+  --backdrop-secondary: #E3EFD3;
+  --calltoaction-color: #D6AB4C;
+  --calltoactionglow-color:rgb(241, 205, 127);
+  --backdrop-alternate:rgb(177, 188, 194);
+
+    --gallery-gap: 1.5em;
+    --gallery-item-height: 250px;
+    --gallery-item-border-radius: 0.4em;
+    --gallery-caption-bg-color: hsl(0 0% 0% / 90%);
+    --gallery-caption-text-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-html,
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  max-width: 100vw;
+	line-height: 1;
+  background-color: var(--backdrop-primary);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  display:block;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
+.temp{
+  padding-left: 60px;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.temp h3{
+  margin-bottom: 2px;
+}
+.temp p{
+  margin-bottom: 5px;
+}
+h1 {
+  font-family: var(--heading-font), 'cursive';
+  font-size: 2em;
+  color: var(--primary-color);
+  text-align: left;
+}
+h2 {
+  font-family: var(--main-font), 'cursive';
+  font-size: 1.5em;
+  color: var(--primary-color);
+  text-align: left;
+}
+h3 {
+  font-family: var(--heading-font), 'cursive';
+  font-size: 1.5em;
+  color: var(--primary-color);
+  text-align: left;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+  font-family: var(--main-font), 'cursive';
+  font-size: 1em;
+  color: var(--primary-color);
+  text-align: left;
 }

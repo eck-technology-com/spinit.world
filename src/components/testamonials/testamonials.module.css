@@ -1,0 +1,129 @@
+.band {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 10vh;
+  height: auto;
+  background-color:var(--backdrop-secondary);
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.introduction{
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding-left:2%;
+  padding-right:2%;
+  gap: 1rem;
+}
+
+.introduction h1 {
+  font-size: 2rem;
+  color: var(--highlight-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+.testimonials {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+  width: 90%;
+}
+
+.quote {
+  font-size: 1.7rem;
+  font-family: var(--heading-font), 'cursive';
+  font-style: italic;
+  min-height: 8vh;
+}
+
+
+.guest {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-family: var(--main-font), 'cursive';
+  font-size: 1.2rem;
+  color: var(--highlight-color);
+  align-self: flex-end;
+  padding-right: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px;
+  width: 95%;
+  padding: 0.5rem;
+}
+
+.controls button {
+
+  background: none;
+  border: none;
+  
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  color: var(--primary-color); 
+  
+
+}
+
+.controls button:hover {
+  
+  color: white; 
+  
+}
+
+@media (max-width: 855px)
+{
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+/* Fade-in and fade-out animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadein {
+  animation: fadeIn 1s forwards;
+}
+
+.fadeout {
+  animation: fadeOut 1s forwards;
+}

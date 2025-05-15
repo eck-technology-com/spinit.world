@@ -1,0 +1,35 @@
+.header {
+  height: 100px;
+  z-index: 1000;
+  position: sticky;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  top: 0;
+  left:0;
+  overflow: hidden;
+  width: 100%;
+  backdrop-filter: saturate(180%) blur(10px);
+}
+.header h1 {
+  background-color: Transparent; /* Transparent background for a sleek look */
+  color: var(--calltoactionglow-color); 
+  padding: 10px 20px; /* Padding for better button size */
+  font-family: var(--heading-font), sans-serif;
+  font-size: 30px; /* Font size for readability */
+  font-weight: bold; /* Bold text */
+  text-decoration: none;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  background-opacity:1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.logo {
+  height: 110px;
+  width: auto;
+  background-opacity: 0.8;
+  
+}
